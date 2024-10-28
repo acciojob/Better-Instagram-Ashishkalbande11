@@ -2,7 +2,7 @@
 
 const images = document.querySelectorAll(".image");
 images.forEach((i, index) => {
-	i.setAttribute("id", `div${index + 1}`)
+	i.setAttribute("id", `drag${index + 1}`)
 })
 
 let draggedElement = null;
@@ -33,9 +33,9 @@ images.forEach((image) => {
                    
 
 
-                    const draggedText = draggedElement.innerText;
-                    draggedElement.innerText = targetElement.innerText;
-                    targetElement.innerText = draggedText
+                    // const draggedText = draggedElement.innerText;
+                    // draggedElement.innerText = targetElement.innerText;
+                    // targetElement.innerText = draggedText
 
                 }
             }
